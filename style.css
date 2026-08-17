@@ -1,0 +1,11 @@
+#texttrigger {
+    display: block;
+}
+
+#texttrigger.collapsed {
+    display: none;
+}
+
+#headertrigger {
+    cursor: pointer;
+}
