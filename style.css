@@ -1,11 +1,25 @@
+#headertrigger {
+    width: 100%;
+    padding: 15px 0;
+
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+
+    cursor: pointer;
+}
+
 #texttrigger {
-    display: block;
+    max-height: 200px;
+    overflow: hidden;
+
+    transition: max-height 0.5s ease;
 }
 
 #texttrigger.collapsed {
-    display: none;
-}
-
-#headertrigger {
-    cursor: pointer;
+    max-height: 0;
 }

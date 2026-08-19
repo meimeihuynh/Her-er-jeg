@@ -1,5 +1,3 @@
-console.log("JavaScript loaded!");
-
 const trigger = document.getElementById('headertrigger');
 const text = document.getElementById('texttrigger');
 
