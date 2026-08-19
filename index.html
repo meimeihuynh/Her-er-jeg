@@ -1,24 +1,50 @@
 <html>
 <head>
-    <title>Expandable Header</title>
+    <title>Her er jeg</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    
+    <intro class="intro">
+        <button id="headertrigger">
+            Hvem er jeg?
+        </button>
 
-    <button id="headertrigger">
-        Hvem er jeg?
-    </button>
+        <p id="texttrigger" class="collapsed">
+            Jeg er en person med mange interesser.
+            <br>
+            En av mine fritidshobbyer er digital kunst.
+            <br>
+            Jeg liker også å lære nye ting.
+        </p>
+    </intro>
 
-    <p id="texttrigger" class="collapsed">
-        Jeg er en person med mange interesser.
-        <br>
-        En av mine fritidshobbyer er digital kunst.
-        <br>
-        Jeg liker også å lære nye ting.
-    </p>
+    <content2>
+        <button id="headertrigger">
+            Hvem er jeg?
+        </button>
 
+        <p id="texttrigger" class="collapsed">
+            Jeg er en person med mange interesser.
+            <br>
+            En av mine fritidshobbyer er digital kunst.
+            <br>
+
+        </p>
+    </content2>
+    
+    <div class="cursor">
+        <svg class="star" viewBox="0 0 24 24">
+            <polygon
+                points="12,1 14.5,9.5 23,12 14.5,14.5 12,23 9.5,14.5 1,12 9.5,9.5"
+                fill="none"
+                stroke="#9500ff"
+                stroke-width="0.8"
+            />
+        </svg>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

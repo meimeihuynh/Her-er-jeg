@@ -1,5 +1,5 @@
 #headertrigger {
-    width: 100%;
+    width: fit-content;
     padding: 15px 0;
 
     background: none;
@@ -23,3 +23,65 @@
 #texttrigger.collapsed {
     max-height: 0;
 }
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+
+/* cursor */
+
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 35px;
+    height: 35px;
+
+    border: 1px solid #9500ff;
+    border-radius: 50%;
+
+    pointer-events: none;
+    z-index: 9999;
+
+    transform: translate(-50%, -50%);
+}
+
+.star {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.star::before,
+.star::after {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 1px;
+    height: 14px;
+
+    background: rgb(149, 0, 255);
+
+    transform: translate(-50%, -50%);
+}
+
+.star::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
