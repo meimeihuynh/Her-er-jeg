@@ -20,7 +20,6 @@ h1 {
 
     font-size: 24px;
     font-weight: bold;
-    text-align: left;
 
     cursor: pointer;
 }
@@ -33,7 +32,7 @@ h1 {
 }
 
 .texttrigger {
-    max-height: 200px;
+    max-height: 1000px;
     overflow: hidden;
 
     transition: max-height 0.5s ease;
@@ -53,7 +52,46 @@ h1 {
   
 }
 
+.illustrationtrigger {
+    display: block;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
 
+    padding: 5px 0;
+
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+
+    transition: color 0.3s ease;
+}
+
+.illustrationtrigger:hover {
+    color: #a48b00;
+}
+
+.illustrations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    max-height: 1000px;
+    overflow: hidden;
+
+    transition: max-height 0.5s ease;
+}
+
+.illustrations.collapsed {
+    max-height: 0;
+}
+
+.illustrations img {
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
 /* cursor */
 
 .cursor {

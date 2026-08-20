@@ -7,6 +7,19 @@ triggers.forEach(trigger => {
     });
 });
 
+
+const illustrationTriggers = document.querySelectorAll('.illustrationtrigger');
+
+illustrationTriggers.forEach(trigger => {
+
+    trigger.addEventListener('click', () => {
+        const illustrations = trigger.nextElementSibling;
+
+        illustrations.classList.toggle('collapsed');
+    });
+
+});
+
 /* cursor */
 
 const cursor = document.querySelector('.cursor');
