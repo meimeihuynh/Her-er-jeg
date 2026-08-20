@@ -1,8 +1,10 @@
-const trigger = document.getElementById('headertrigger');
-const text = document.getElementById('texttrigger');
+const triggers = document.querySelectorAll('.headertrigger');
 
-trigger.addEventListener('click', () => {
-    text.classList.toggle('collapsed');
+triggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+        const text = trigger.nextElementSibling;
+        text.classList.toggle('collapsed');
+    });
 });
 
 /* cursor */

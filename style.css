@@ -1,6 +1,18 @@
-#headertrigger {
+
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+
+    margin-top: 50px;
+}
+
+.headertrigger {
     width: fit-content;
     padding: 15px 0;
+    overflow: hidden;
 
     background: none;
     border: none;
@@ -13,24 +25,28 @@
     cursor: pointer;
 }
 
-#texttrigger {
+.headertrigger:hover {
+    color: #a48b00;
+    border-color: #a48b00;
+
+    transition: color 0.8s ease, border-color 0.8s ease;
+}
+
+.texttrigger {
     max-height: 200px;
     overflow: hidden;
 
     transition: max-height 0.5s ease;
 }
 
-#texttrigger.collapsed {
+.texttrigger.collapsed {
     max-height: 0;
 }
 
-.intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    height: 100vh;
+.content {
+    width: 100%;
+    height: 100%;
+  
 }
 
 
@@ -85,3 +101,17 @@
     transform: translate(-50%, -50%) rotate(90deg);
 }
 
+
+.artimage {
+    width: auto;
+    height: 400px;
+    margin: 10px;
+
+}
+
+.artdisplay {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
