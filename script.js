@@ -2,8 +2,8 @@ const triggers = document.querySelectorAll('.headertrigger');
 
 triggers.forEach(trigger => {
     trigger.addEventListener('click', () => {
-        const text = trigger.nextElementSibling;
-        text.classList.toggle('collapsed');
+        const content = trigger.parentElement.querySelectorAll('.texttrigger');
+        content.forEach(text => text.classList.toggle('collapsed'));
     });
 });
 
